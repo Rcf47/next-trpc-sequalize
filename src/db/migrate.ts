@@ -1,8 +1,8 @@
-import { Author, Post } from "@src/models/";
+import { Author, Post } from "@/src/models";
 import sequelize from "./sequelize";
 
-import type { T_PostCreate } from "@src/zod/post";
-import type { T_AuthorCreate } from "@src/zod/author";
+import type { T_PostCreate } from "@/src/zod/post";
+import type { T_AuthorCreate } from "@/src/zod/author";
 
 (async () => {
   await sequelize.drop({
