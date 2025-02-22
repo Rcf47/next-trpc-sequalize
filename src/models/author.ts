@@ -1,8 +1,8 @@
 import { DataTypes, Model } from "sequelize";
-import sequelize from "@/db/sequelize";
+import sequelize from "@/src/db/sequelize";
 
-import { authorConstraints } from "@/zod/author";
-import type { T_Author, T_AuthorCreate } from "@/zod/author";
+import { authorConstraints } from "@/src/zod/author";
+import type { T_Author, T_AuthorCreate } from "@/src/zod/author";
 
 export default class Author extends Model<T_Author, T_AuthorCreate> {
   declare id: T_Author["id"];
