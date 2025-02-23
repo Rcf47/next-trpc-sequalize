@@ -1,0 +1,11 @@
+import { Author } from "@/src/models";
+
+export async function handlerGetAuthor({ input }: { input: string }) {
+  const author = await Author.findByPk(input);
+
+  if (!author) {
+    return null;
+  }
+
+  return author.toJSON();
+}
