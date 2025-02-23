@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate": "tsx ./scripts/migrate.ts"
+    "migrate": "tsx ./src/db/migrate.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
